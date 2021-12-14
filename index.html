@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Design Enterprise Studio Blog</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="main--title">
+        Comprehensive Creative Tech Project Weekly Log
+      </h1>
+      <h2 class="workers--title">Cameron Tebbenham-Small</h2>
+    </header>
+
+    <nav>
+      <button class="blog-list-nav--button" onclick="toggleNav('nav-menu')">
+        Navigation
+      </button>
+      <div class="blog-list" id="nav-menu">
+        <button
+          class="blog-list--button active"
+          onclick="openTab('introduction')"
+        >
+          Introduction
+        </button>
+        <button class="blog-list--button" onclick="openTab('october')">
+          October
+        </button>
+        <button class="blog-list--button" onclick="openTab('november')">
+          November
+        </button>
+        <button class="blog-list--button" onclick="openTab('december')">
+          December
+        </button>
+        <!-- <button class="blog-list--button" onclick="openTab('january')">January</button>
+        <button class="blog-list--button" onclick="openTab('february')">February</button>
+        <button class="blog-list--button" onclick="openTab('march')">March</button>
+        <button class="blog-list--button" onclick="openTab('april')">April</button> -->
+      </div>
+    </nav>
+
+    <!-- Topic Articles - topic wrapper, topic-box content -->
+
+    <section class="topic" id="introduction" style="display: block">
+      <article class="topic-box">
+        <h2 class="topic-header">Introduction</h2>
+        <p class="p-center">
+          There is evidence of museums in the UK utilising a virtual space and
+          online exhibits to maintain a reach during Covid 19, but I want to
+          detach the exhibits from the physical museum such that the focus can
+          be placed firmly on the exhibits themselves, while also allowing
+          anyone from any walk of life with access to the web to learn something
+          new even in a post Covid world.
+          <br /><br />
+          Museums are costly, they take up a huge amount of space and it is
+          impractical to hold multiple large exhibits in one space - especially
+          physically large exhibits or artifacts and ruins that are themselves
+          unable to be transferred to a museum. A virtual web app would allow
+          historians and museum specialists to not only portray (potentially 3D
+          scanned) versions of the object in question, but also inform a more
+          diverse audience about the history and culture surrounding the
+          exhibit.
+          <br /><br />
+          My project would explore how an online web app might be designed, how
+          3D exhibits and accompanying text could be uploaded and updated, with
+          a potential database to hold said information such that exhibits could
+          be quickly loaded back and forth.
+        </p>
+      </article>
+    </section>
+    <section class="topic" id="october">
+      <article class="topic-box">
+        <table>
+          <tr>
+            <th>Date</th>
+            <th>Tasks Set</th>
+            <th>Tasks Completed</th>
+            <th>Tasks Defined</th>
+          </tr>
+        </table>
+
+        <h2 class="topic-header">Preliminary Research</h2>
+        <p class="p-center"></p>
+      </article>
+    </section>
+
+    <section class="topic" id="november">
+      <article class="topic-box">
+        <h2 class="topic-header">Week 1</h2>
+        <p class="p-center">
+          As alluded to in the previous entry, we had our first meeting with the
+          client. This was our opportunity to lay out the main topics which
+          would be required to set a full brief and begin working on the
+          project. Though we had previously suggested using Zoom and meeting at
+          midday, we ended up meeting half an hour earlier using Google.<br /><br />
+          The meeting itself was quick and concise and both Kseniia and I were
+          able to cover all the questions we had gathered. We learnt that the
+          target audience would be a very broad range from toddlers to adults
+          and is intended more so for those who wouldn't otherwise be going out
+          and about.
+          <br /><br />
+          One thing we noted was just how open the project appeared to be; we
+          were told that we are free to use more or less any mapping tool we
+          want to for embedding purposes. What's more, the gamification aspects
+          would require both a manual and automatic means of checking off
+          locations. Automatic would be preferable and could potentially be
+          linked to the QR codes, but manual would cover any potential errors or
+          inconveniences.
+          <br /><br />
+          The prototype webapp will likely be lacking in content as we are
+          reliant on the client to produce more content. We have an idea of what
+          type of content will be used - audio guides for the entire route,
+          drone footage, advised dress codes for the given route etc. But the
+          client so far doesn't have a large stockpile of resources. This is
+          manageable by using placeholders for the meantime.
+          <br /><br />
+          Lastly, following our concerns with the speed of email communication
+          (or lack thereof), we asked the client if they would be happy to use
+          slack. It turns out they already had a slack group for the project, so
+          now we just have to wait to be invited.
+        </p>
+      </article>
+      <article class="topic-box">
+        <h2 class="topic-header">Week 2</h2>
+        <p>
+          This week we were invited to our client's Slack group and were
+          provided some more information about the content requirements of the
+          site. We were also provided a link to the client's original website
+          and made note of a few questions that would need to be answered before
+          the web-app is designed.<br /><br />
+          Firstly, the client's original documentation made mention of an app -
+          but we were under the impression that we would be designing and
+          developing a web-app, so clarification would be needed on that front.
+          Secondly, we would need clarification on where exactly the required
+          content would be stored - on the web-app, completely separate to the
+          original website, or the original website itself. Thus we are unsure
+          exactly how the website and web-app will be connected and if the
+          web-app will simply be part of the existing website.<br /><br />
+          Due to these questions, we began writing up a project brief outlining
+          the must haves and should haves, technical and design requirements,
+          but need these few questions to be answered before we can finalize the
+          brief.
+        </p>
+      </article>
+      <article class="topic-box">
+        <h2 class="topic-header">Week 3</h2>
+        <p>
+          On Tuesday we spoke with Jack about what we needed to complete next
+          and were given some advice:
+        </p>
+
+        <ul>
+          <li>
+            Competitor reference can be used more as a starting point even
+            without actual competitors<br />
+          </li>
+          <li>Go into the next meeting with a recommendation on features</li>
+          <li>
+            Set an agenda based on meeting notes and sum it up conversationally
+            after
+          </li>
+          <li>Create a mood-board</li>
+          <li>Come up with functionality</li>
+        </ul>
+        With this in mind we scheduled a meeting for Wednesday and met with the
+        client. We discussed the few remaining questions we had and received
+        adequate answers for all of them. This included confirmation that the
+        app could be a webapp and where the webapp might eventually be located.
+        The client also agreed with both our recommendations: a) content be
+        stored in the webapp itself rather than the client's website and b) use
+        a mini quiz as part of the collectables feature.
+      </article>
+      <article class="topic-box">
+        <h2 class="topic-header">Week 4</h2>
+        <p>
+          We wrote up a brief summing up all the points that we had agreed on
+          during our meetings and posted it in the Frome Valley slack group for
+          approval. We had positive responses and only one discussion point
+          about a timeframe. We explained that we would be presenting during
+          January but that we did not yet have a set date for the final
+          deliverable.
+        </p>
+        <br />
+        <iframe
+          src="assets/Frome Valley Digital Trails Brief.pdf"
+          class="article-pdf"
+        ></iframe>
+      </article>
+    </section>
+
+    <section class="topic" id="december">
+      <article class="topic-box">
+        <h2 class="topic-header">Week 1</h2>
+        <p class="p-center">
+          User journey maps were developed for a series of potential users to
+          understand how they might want to use a digital trails webapp, their
+          expectations and emotions when using it.
+        </p>
+      </article>
+      <article class="topic-box">
+        <h2 class="topic-header">Week 2</h2>
+        <p class="p-center">
+          Work began on the creation of low-fi wireframes alongside discussions
+          on how the gamification aspects would interact with the design.
+          Challenges involved containing all the potential content within a
+          relatively small mobile centric design.
+        </p>
+        <img
+          src="assets/wireframe_1.png"
+          class="img-center"
+          alt="lo-fi wireframe showing local walks and a series of clickable routes"
+        />
+        <img
+          src="assets/wireframe_2.png"
+          class="img-center"
+          alt="lo-fi wireframe showing a specific route page with an expandable map, route information and start trail button"
+        />
+      </article>
+    </section>
+
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

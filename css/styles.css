@@ -1,0 +1,187 @@
+/* CSS reset - https://piccalil.li/blog/a-modern-css-reset/ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+header,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* CSS begins */
+
+body {
+  /* Photo by Wander Fleur on https://unsplash.com/photos/iscWpXCQhOk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
+  background: url("/assets/museum.jpg");
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+  background: black;
+  padding: 50px;
+}
+.topic-header {
+  padding-bottom: 10px;
+  margin: 5px;
+  display: block;
+}
+.p-center {
+  padding: 5px;
+  margin: 5px;
+  display: block;
+}
+/* .img-center {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 300px;
+} */
+.img-center {
+  display: inline;
+}
+
+.main--title,
+.workers--title {
+  color: white;
+}
+
+.blog-list {
+  display: flex;
+  background-color: #333;
+  justify-content: center;
+}
+.blog-list--button {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #333;
+  border: none;
+}
+.blog-list--button:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+.active {
+  background: #ddd;
+}
+
+.blog-list-nav--button {
+  display: none;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #333;
+  border: none;
+}
+.blog-list-nav--button {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+.topic {
+  width: 60%;
+  text-align: center;
+  margin: 0 20% 0 20%;
+  display: none;
+}
+.topic-box {
+  display: block;
+  flex-direction: row;
+  background: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.article-pdf {
+  width: 90%;
+  height: 800px;
+}
+
+@media (max-width: 800px) {
+  .topic {
+    width: 100%;
+    margin: 0;
+  }
+  .blog-list-nav--button {
+    display: block;
+    width: 100%;
+  }
+  #nav-menu {
+    display: none;
+  }
+  .blog-list {
+    flex-direction: column;
+  }
+}
