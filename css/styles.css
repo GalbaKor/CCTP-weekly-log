@@ -89,10 +89,10 @@ header {
   padding: 50px;
 }
 .topic-header {
-  padding-bottom: 10px;
   margin: 5px;
   display: block;
 }
+
 .p-center {
   padding: 5px;
   margin: 5px;
@@ -167,6 +167,23 @@ header {
 .article-pdf {
   width: 90%;
   height: 800px;
+}
+
+.table-center {
+  text-align: center;
+}
+table,
+td,
+th {
+  border: 1px solid black;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list-no-style {
+  list-style: none;
 }
 
 @media (max-width: 800px) {
